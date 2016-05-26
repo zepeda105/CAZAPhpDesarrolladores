@@ -47,4 +47,21 @@ class ClaseSobreCargaDeMetodos{
 
     }
 
+    // === FUNCION __callStatic() ===
+    /* |-----------------------------------------------------------------------------
+     * | __callStatic(): Funciona como __call(), excepto que se llama cuando se hace un
+     * | intento de llamar a un metodo estatico invisible. Por ejemplo:
+     * |
+     * */
+
+    public static function __callStatic($nombreDelMetodo, $argumentos){
+        // TODO: Implement __callStatic() method.
+        echo "Metodo estatico '$nombreDelMetodo' llamada a los argumentos : <br/>";
+            foreach ($argumentos as $arg){
+                echo"$arg<br/>";
+            }
+    }
+
+
+
 }
