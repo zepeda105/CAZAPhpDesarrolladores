@@ -21,7 +21,11 @@
         $pruebaDeObjetoDos = new ClaseSobreCargaDeMetodos();
         unset($pruebaDeObjetoDos->platano); //Muestra Fue destruida la siguiente propiedad'platano'      
 
+    // ==== INSTANCIAR EL METODO ESTATICO __callStatic()====
+    //   Elmetodo "metodoAleatorio()" no existe en la clase pero __callStatic() lo muestra ya que
+    //   en la clase se considera como un metodo invisible.
 
+        ClaseSobreCargaDeMetodos::metodoAleatorio("manzana", "pera", "uva");
 
 
 
